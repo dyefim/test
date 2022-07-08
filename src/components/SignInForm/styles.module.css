@@ -1,0 +1,34 @@
+.signInForm {
+  margin: 0 auto;
+  max-width: 400px;
+  padding: 10px 50px 30px;
+  background-color: var(--color-white);
+  border: 1px solid var(--color-gray);
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px var(--color-gray);
+}
+
+.signInForm legend {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.signInForm form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.signInForm form button[type='submit'] {
+  width: 200px;
+}
+
+.signInForm form input {
+  width: 300px;
+  margin-bottom: 20px;
+}
+
+.errorMessage {
+  color: var(--color-red);
+}
