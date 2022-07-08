@@ -1,0 +1,8 @@
+.graphPage {
+  padding: 10px;
+}
+
+.graphPage button {
+  float: right;
+  width: 200px;
+}
