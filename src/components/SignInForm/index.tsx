@@ -59,7 +59,9 @@ const SignInForm = () => {
           value={password}
           onChange={handlePasswordChange}
         />
-        <span className={styles.errorMessage}>{errorMessage}</span>
+        <span className={styles.errorMessage} data-testid="error-message">
+          {errorMessage}
+        </span>
         <Button disabled={!username || !password}>Sign in</Button>
       </form>
     </div>

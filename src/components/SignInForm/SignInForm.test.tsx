@@ -1,4 +1,4 @@
-import { render, fireEvent, screen, getByText } from '@testing-library/react';
+import { render, fireEvent, screen } from '@testing-library/react';
 import { Provider } from 'react-redux';
 import { BrowserRouter } from 'react-router-dom';
 import { store } from 'store';
@@ -38,6 +38,10 @@ test('Ability to submit form', () => {
   expect(passwordInput.value).toBe('123');
 
   expect(button).not.toHaveAttribute('disabled');
+
+  fireEvent.click(button);
+
+  expect(screen.queryByTestId('error-message')).toBeVisible();
 });
 
 test('Empty form can not be submited', () => {
